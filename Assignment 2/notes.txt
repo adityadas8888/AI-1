@@ -1,0 +1,1 @@
+In branching factor, choose the worst case scenario, i.e. the highest number of moves possible
