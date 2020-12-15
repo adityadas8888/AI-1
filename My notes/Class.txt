@@ -1,0 +1,98 @@
+ERB 553
+ERB 128
+http://omega.uta.edu/~gopikrishnav/
+LISP
+
+Extra credits are mandatory for us.
+
+Stuart Russel, Peter Norvig. 2nd Edition is recommended. 3rd Edition is ok.
+
+Office Hours: Mon, Wed 11:30 AM to 1 PM in ERB 553
+
+vamsikrishna.gopikrishna@uta.edu
+PUT CSE 5360 in SUBJECT
+
+12 Assignments for the semester.
+Online Submission only.
+
+
+ACS OMEGA
+No Final
+
+
+
+What is AI?
+Systems that think rationally.
+
+Goal of the course is to build a rational agent
+Abstractly an agent is a function from percept histories to actions:
+f:P*->A
+
+PEAS Measures
+To design a rational agent we need the following things
+
+Performance measure
+Environment
+Actuator
+Sensor
+We are mostly gonna build goal based agents
+
+
+Simple Reflex agents---- more or less if else , example  if room A is clean go to room B.
+
+Reflex Agents with state---- has states example, if room X is clean fo to neighbour of room X
+ 
+Goal based agents.
+Utility based agents Most generic form of building rational agent. Most difficult to build.
+
+
+Tree search algorithms. Optimize. Don't build a tree to search for something.
+Implementation, nodes or states
+
+Tree Search.
+
+Branching Factor- Maximum number of possible ways. 
+Max depth - How deep can the node go. Can be infinity if navigation or looping problem.
+
+Uninformed Search Strategies.
+
+BFS
+Uniform Cost search
+depth First search
+Depth Limited search
+Iterative deepening search
+
+
+Properties of Breadth First search FIFO
+Complete : Yes if b is finite
+Time Complexity =  1+b+b2+b3+......... +b*b^d-1 === O(b^d+1)
+Space complexity = cant really ditch memory, any node might lead to a solution
+Optimality =  not very optimal, as we use the shallowest node. 
+
+
+Properties of Uniform Cost search LIFO
+its a generic version of the BFS
+its implemented using a sorted list. expand least cost unexpanded node
+fringe= queue ordered by path cost, lowest first
+Equivalent to bfs if step costs all equal.
+Complete : Yes if step cost >= small number
+Time Complexity =  ###############
+Space complexity = ###########
+Optimality =  not very optimal, as we use the shallowest node.
+
+
+Properties of Depth First search LIFO
+deepest node search
+fringe= queue ordered by path cost, lowest first
+Equivalent to bfs if step costs all equal.
+Complete : Yes if finite depth level
+Time Complexity =  ###########
+Space complexity = #############
+Optimality =  NOT OPTIMAL, will find a solution, but not OPTIMAL
+
+
+
+
+
+
+
